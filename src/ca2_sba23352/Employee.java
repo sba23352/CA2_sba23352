@@ -10,8 +10,15 @@ package ca2_sba23352;
  */
 public class Employee {
     //Instance fields
-    private String firstName;
+    private String fullName;
     private String email;
     private int empNum;
+
+    public Employee(){
+        this.fullName = "Indiana Jones";
+        this.email = "Ijunior@gmail.com";
+    }
+    
+    
     
 }
