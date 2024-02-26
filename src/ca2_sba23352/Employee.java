@@ -9,5 +9,9 @@ package ca2_sba23352;
  * @author amber
  */
 public class Employee {
+    //Instance fields
+    private String firstName;
+    private String email;
+    private int empNum;
     
 }
