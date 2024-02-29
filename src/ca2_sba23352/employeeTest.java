@@ -12,23 +12,33 @@ public class employeeTest {
 
     /**
      * @param args the command line arguments
-     * 
+     *
      */
-     
     //Static field "nextEmpNum" intialised at 1 and set to increment
     private static int nextEmpNum = 1;
-    
+
     public static void main(String[] args) {
         // create 3 employee objects stated in assignment brief
-        Employee emp1 = new Employee ("Joe Bloggs" , "jb@gmail.com", nextEmpNum++);
-        Employee emp2 = new Employee ("Ann Banana", "ab@gmail.com", nextEmpNum++);
-        Employee emp3 = new Employee ("Tom Thumb", "tt@gmail.com", nextEmpNum++);
-        
+        Employee emp1 = new Employee("Joe Bloggs", "jb@gmail.com", nextEmpNum++);
+        Employee emp2 = new Employee("Ann Banana", "ab@gmail.com", nextEmpNum++);
+        Employee emp3 = new Employee("Tom Thumb", "tt@gmail.com", nextEmpNum++);
+
         //Declare an array called "Projectgroup" to store employee objects
         Employee[] projectGroup = {emp1, emp2, emp3};
-        
+
         // Print out the value of variable nextEmpNum
         System.out.println("Value of nextEmpNum:" + nextEmpNum);
+
+        //Write the code to search and display employees names and numbers above certain value(m)
+        int m = 1;
+
+        for (Employee employee : projectGroup) {
+            if (employee.getempNum() > m) {
+                System.out.println("Employee name: " + employee.getName());
+            } else {
+                System.out.println("No employee found");
+            }
+        }
     }
-    
+
 }
