@@ -14,8 +14,12 @@ public class Company {
     //String variable to hold name of company and ArrayList to hold list of employee objects
     String companyName;
     ArrayList<String> staff;
-}
-public Company() {
-
+    
+    //default constructor
+    public Company() {
+        this.companyName = companyName;
+        this.staff = new ArrayList<>();
+    }
+    public
 }
 
