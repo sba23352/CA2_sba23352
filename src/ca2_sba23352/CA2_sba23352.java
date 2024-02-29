@@ -12,7 +12,12 @@ public class CA2_sba23352 {
 
     /**
      * @param args the command line arguments
+     * 
      */
+     
+    //Static field "nextEmpNum" intialised at 1 and set to increment
+    private static int nextEmpNum = 1;
+    
     public static void main(String[] args) {
        
         
