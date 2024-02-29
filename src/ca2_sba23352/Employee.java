@@ -11,9 +11,9 @@ package ca2_sba23352;
 public class Employee {
 
     //Instance fields
-    private String fullName;
-    private String email;
-    private int empNum;
+    String fullName;
+    String email;
+    int empNum;
 
     //default value constructor
     public Employee() {
@@ -24,12 +24,24 @@ public class Employee {
     public Employee(String fullName, String email) {
         this.fullName = fullName;
         this.email = email;
-        this.empNum = nextEmpNum++;
+        
+    }
+    //Accessor method for name
+    public String getName() {
+        return fullName;
+    }
+    
+    //Accessor method for email
+    public String getEmail() {
+        return email;
+    }
+    
+    //Accessor method for empNum
+    public int getempNum() {
+        return empNum;
     }
 
-    //Static field "nextEmpNum" intialised at 1 and set to increment
-    private static int nextEmpNum = 1;
-    
+   
     
 
 }
