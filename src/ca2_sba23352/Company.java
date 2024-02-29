@@ -20,6 +20,10 @@ public class Company {
         this.companyName = companyName;
         this.staff = new ArrayList<>();
     }
-    public
+    
+    //overloaded constructor for companyname
+    public Company(String companyName) {
+        this.companyName = "Gnómes Ltd";
+    }
 }
 
