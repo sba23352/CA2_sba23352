@@ -24,24 +24,32 @@ public class Employee {
     public Employee(String fullName, String email) {
         this.fullName = fullName;
         this.email = email;
-        
+
     }
+
     //Accessor method for name
     public String getName() {
         return fullName;
     }
-    
+
     //Accessor method for email
     public String getEmail() {
         return email;
     }
-    
+
     //Accessor method for empNum
     public int getempNum() {
         return empNum;
     }
 
-   
-    
+    //Setemail method and check if the email is valid
+    public void setEmail(String email) {
+        if (email.length() > 3) {
+            this.email = email;
+        } else {
+            System.out.println("Email must be longer than 3 charecters");
+        }
+
+    }
 
 }
