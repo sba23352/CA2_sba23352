@@ -24,8 +24,11 @@ public class employeeTest {
         Employee emp2 = new Employee ("Ann Banana", "ab@gmail.com", nextEmpNum++);
         Employee emp3 = new Employee ("Tom Thumb", "tt@gmail.com", nextEmpNum++);
         
+        //Declare an array called "Projectgroup" to store employee objects
+        Employee[] projectGroup = {emp1, emp2, emp3};
         
-        
+        // Print out the value of variable nextEmpNum
+        System.out.println("Value of nextEmpNum:" + nextEmpNum);
     }
     
 }

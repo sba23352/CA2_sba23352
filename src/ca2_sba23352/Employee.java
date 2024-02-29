@@ -11,19 +11,21 @@ package ca2_sba23352;
 public class Employee {
 
     //Instance fields
-    String fullName;
-    String email;
-    int empNum;
+    private String fullName;
+    private String email;
+    private int empNum;
 
     //default value constructor
-    public Employee() {
+     public Employee() {
         System.out.println("Creating employee name and email");
     }
+   
 
     //constructor with values passed as parameters
-    public Employee(String fullName, String email) {
+    public Employee(String fullName, String email, int empNum) {
         this.fullName = fullName;
         this.email = email;
+        this.empNum = empNum;
 
     }
 
