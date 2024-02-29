@@ -17,9 +17,7 @@ public class Employee {
 
     //default value constructor
     public Employee() {
-        this.fullName = "Indiana Jones";
-        this.email = "Ijunior@gmail.com";
-        this.empNum = nextEmpNum++;
+        System.out.println("Creating employee name and email");
     }
 
     //constructor with values passed as parameters
@@ -29,7 +27,7 @@ public class Employee {
         this.empNum = nextEmpNum++;
     }
 
-    //Static field "nextEmpNum intialised at 1 and set to increment
+    //Static field "nextEmpNum" intialised at 1 and set to increment
     private static int nextEmpNum = 1;
     
     
