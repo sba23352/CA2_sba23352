@@ -8,7 +8,7 @@ package ca2_sba23352;
  *
  * @author amber
  */
-public class CA2_sba23352 {
+public class employeeTest {
 
     /**
      * @param args the command line arguments
@@ -19,7 +19,12 @@ public class CA2_sba23352 {
     private static int nextEmpNum = 1;
     
     public static void main(String[] args) {
-       
+        // create 3 employee objects stated in assignment brief
+        Employee emp1 = new Employee ("Joe Bloggs" , "jb@gmail.com", nextEmpNum++);
+        Employee emp2 = new Employee ("Ann Banana", "ab@gmail.com", nextEmpNum++);
+        Employee emp3 = new Employee ("Tom Thumb", "tt@gmail.com", nextEmpNum++);
+        
+        
         
     }
     
