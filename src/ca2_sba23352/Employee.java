@@ -11,13 +11,14 @@ package ca2_sba23352;
 public class Employee {
 
     //Instance fields
-    private String fullName;
-    private String email;
-    private int empNum;
+    protected String fullName;
+    protected String email;
+    protected int empNum;
 
     //default value constructor
      public Employee() {
-        System.out.println("Creating employee name and email");
+        this.fullName = "John Doe";
+        this.email = "jd@gmail.com";
     }
    
 

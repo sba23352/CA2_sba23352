@@ -30,7 +30,7 @@ public class employeeTest {
         System.out.println("Value of nextEmpNum:" + nextEmpNum);
 
         //Write the code to search and display employees names and numbers above certain value(m)
-        int m = 1;
+        int m = 0;
 
         for (Employee employee : projectGroup) {
             if (employee.getempNum() > m) {
@@ -39,6 +39,10 @@ public class employeeTest {
                 System.out.println("No employee found");
             }
         }
+        Company.listEmployees(m);
+        Manager manager = new Manager("Matthew Downey", "md@gmail.com", nextEmpNum++, "Gnomeo", "smurf");
+        manager.managerMenu();
+        
     }
 
 }
