@@ -11,9 +11,11 @@ import java.util.Scanner;
  * @author amber
  */
 public class Manager extends Employee {
+    //Manager class made for employee given username and password
 
     private String userName;
     private String password;
+//method for applying username and password to exisitng employee
 
     public Manager(String fullName, String email, int empNum, String userName, String password) {
         setUserName(userName);
@@ -22,6 +24,7 @@ public class Manager extends Employee {
         this.email = email;
         this.empNum = empNum;
     }
+//getter for username and password
 
     public String getUserName() {
         return userName;
@@ -30,6 +33,7 @@ public class Manager extends Employee {
     public String getPassword() {
         return password;
     }
+//setter for username an d password
 
     public void setUserName(String userName) {
         this.userName = userName;
@@ -38,6 +42,7 @@ public class Manager extends Employee {
     public void setPassword(String password) {
         this.password = password;
     }
+//console menu for employee/manager to access management system
 
     public void managerMenu() {
         Scanner consolemenu = new Scanner(System.in);
@@ -57,7 +62,7 @@ public class Manager extends Employee {
                 informationCorrect = true;
 
             } else {
-                System.out.println("Incorrect username or password exit console");
+                System.out.println("Incorrect username or password please try again");
             }
 
         } while (informationCorrect == false);
