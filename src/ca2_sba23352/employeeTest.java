@@ -49,9 +49,6 @@ public class employeeTest extends Company {
         Manager manager = new Manager("Matthew Downey", "md@gmail.com", nextEmpNum++, "Gnomeo", "smurf");
         manager.managerMenu();
 
-        //Console menu for managers to add and view employee
-        Scanner adminMenu = new Scanner(System.in);
-        int menuOpt = adminMenu.nextInt();
-
+        
     }
 }
