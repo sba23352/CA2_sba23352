@@ -4,6 +4,7 @@
  */
 package ca2_sba23352;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -66,6 +67,40 @@ public class Manager extends Employee {
             }
 
         } while (informationCorrect == false);
+
+        //console  menu for managers to add and view current staff
+        int menuOpt;
+        do {
+            System.out.println("------Admin menu-------");
+            System.out.println("1. View current staff");
+            System.out.println("2. Add new staff:");
+            System.out.println("3. Exit console:");
+            System.out.println("Please enter your choice:");
+            menuOpt = consolemenu.nextInt();
+            consolemenu.nextLine();
+
+            //switch condition to check through each option in concole menu
+            switch (menuOpt) {
+                case 1:
+                    Company.listEmployees(empNum);
+
+                    break;
+                case 2:
+                    System.out.println("Please enter staff name you wish to add:");
+                    consolemenu.nextLine();
+                    Company.staff.add(this);
+                    System.out.println("Staff has been added to list");
+                    break;
+                case 3:
+                    System.out.println("Exiting System");
+                    System.exit(0);
+                    break;
+
+                default:
+                    System.out.println("Invalid option please try again:");
+            }
+
+        } while (menuOpt != 3);
 
     }
 }

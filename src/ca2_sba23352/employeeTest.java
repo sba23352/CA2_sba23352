@@ -4,11 +4,14 @@
  */
 package ca2_sba23352;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /**
  *
  * @author amber
  */
-public class employeeTest {
+public class employeeTest extends Company {
 
     /**
      * @param args the command line arguments
@@ -22,6 +25,7 @@ public class employeeTest {
         Employee emp1 = new Employee("Joe Bloggs", "jb@gmail.com", nextEmpNum++);
         Employee emp2 = new Employee("Ann Banana", "ab@gmail.com", nextEmpNum++);
         Employee emp3 = new Employee("Tom Thumb", "tt@gmail.com", nextEmpNum++);
+        Employee newEmp = new Employee();
 
         //Declare an array called "Projectgroup" to store employee objects
         Employee[] projectGroup = {emp1, emp2, emp3};
@@ -40,9 +44,14 @@ public class employeeTest {
             }
         }
         Company.listEmployees(m);
+
+        //calling in method to main for manager console menu
         Manager manager = new Manager("Matthew Downey", "md@gmail.com", nextEmpNum++, "Gnomeo", "smurf");
         manager.managerMenu();
-        
-    }
 
+        //Console menu for managers to add and view employee
+        Scanner adminMenu = new Scanner(System.in);
+        int menuOpt = adminMenu.nextInt();
+
+    }
 }

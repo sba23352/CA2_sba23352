@@ -10,11 +10,12 @@ import java.util.ArrayList;
  *
  * @author amber
  */
-public class Company {
+public class Company extends Employee {
 
     //String variable to hold name of company and ArrayList to hold list of employee objects
     String companyName;
     public static ArrayList<Employee> staff = new ArrayList<Employee>();
+    
 
     //default constructor
     public Company() {
@@ -29,8 +30,9 @@ public class Company {
     }
 
     //Method for adding staff
-    public String addNewStaff(Employee employee) {
-        return this.addNewStaff(employee);
+    public void addNewStaff(Employee employee) {
+        staff.add(employee);
+        System.out.println(staff);
     }
 
     //Method to get number of staff in arraylist
@@ -45,6 +47,8 @@ public class Company {
         for (Employee employee : staff) {
             if (employee.getempNum() > m) {
                 System.out.println(employee.getName() + "/n");
+                System.out.println(employee.getEmail() + "/n");
+                System.out.println(employee.getempNum());
             }
 
         }
