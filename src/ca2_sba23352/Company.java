@@ -53,5 +53,16 @@ public class Company extends Employee {
 
         }
 
+    } 
+    //Challenge: Create method that removes an employee from the staff
+    public void removeStaff(int empNum) {
+        for (Employee employee : staff) {
+            if (employee.getempNum() == empNum) {
+                staff.remove(employee);
+                System.out.println("Employee with number " + empNum + " has been removed");
+                return;
+            }
+        }
+        
     }
 }
