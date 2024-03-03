@@ -8,7 +8,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- *
+ *Github link for project
+ * https://github.com/sba23352/CA2_sba23352.git
  * @author amber
  */
 public class employeeTest extends Company {
